@@ -1,0 +1,155 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --vermelho: #FF001B;
+    --branco: #fff;
+}
+
+/* header vertical */
+.container-fluid{
+    background-color: var(--vermelho);
+    width: 10%;
+    position: fixed;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* itens do header */
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item:hover{
+    background-color: var(--branco);
+    border-radius: 20px;
+}
+
+.nav-link{
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.nav-link:hover{
+    color: var(--vermelho);
+}
+
+/* icones do header */
+svg {
+    width: 30%;
+}
+
+.nav-item svg path {
+    fill: #000000;
+    transition: all 0.2s;
+}
+
+.nav-link:hover svg path {
+    fill: var(--vermelho);
+}
+/* fim header vertical */
+
+/* começo header horizontal - responsivo */
+.container-fluid2{
+    display: none;
+    background-color: var(--branco);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.esquerda, .direita{
+    display: flex;
+    flex-direction: row;
+}
+
+/* começo offcanvas */
+.navbar-toggler{
+    font-size: 3rem;
+    color: var(--vermelho)
+}
+
+.offcanvas-header, .offcanvas-body{
+    background-color: var(--branco);
+    color: var(--vermelho);
+    font-size: 1.5rem;
+}
+
+/* botão de fechar */
+.fechar{
+    background-color: var(--vermelho);
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+/* itens do offcanvas */
+.nav-link2{
+    color: var(--vermelho);
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.nav-item2{
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.nav-item2:hover{
+    background-color: var(--vermelho);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.nav-link2:hover{
+    color:var(--branco);
+}
+
+/* icones do offcanvas */
+svg path{
+    color: var(--vermelho);
+}
+
+.nav-link2 svg{
+    width: 8%;
+    margin-right: 0.5rem;
+}
+
+.nav-item2:hover svg path {
+    fill: var(--branco);
+}
+
+.linha-horizontal {
+    height: 0.1rem;
+    background-color: var(--vermelho);
+}
+/* fim offcanvas */
+
+/* fim header horizontal - responsivo */
+
+/* responsividade - some o header vertical e aparece o horizontal */
+@media(max-width:845px){
+    .container-fluid2{
+        display: flex;
+    }
+
+    .container-fluid{
+        display: none;
+    }
+}
