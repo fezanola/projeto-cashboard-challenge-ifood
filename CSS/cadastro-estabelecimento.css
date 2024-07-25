@@ -1,0 +1,32 @@
+body {
+    background-image: url("../Imagens/Cadastro Estabelecimento/background_cadastro2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#infoestabelecimento {
+    text-wrap: wrap;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+#basebox {
+    display: flex;
+}
+
+#cadastrobox {
+    background-color: white;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+#linkcontinuar {
+    margin-bottom: 4vh;
+}
+
+@media (max-height:800px) {
+    #basebox {
+        min-height: 600px;
+    }
+  }

@@ -1,0 +1,45 @@
+body {
+    background-image: url("../Imagens/Login/background_login.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#loginbox {
+    background-color: white;
+}
+
+#logoifood {
+    width: 75%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 10%;
+}
+
+#miniaturacashboard {
+    width: 70%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-right: 10%;
+}
+
+#portalcashboard {
+    text-wrap: wrap;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+#esquecisenha {
+    text-align: left;
+}
+
+#linkentrar {
+    margin-bottom: 4vh;
+}
+
+
+@media (max-height:600px) {
+    #basebox {
+        min-height: 800px;
+    }
+  }

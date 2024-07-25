@@ -1,0 +1,53 @@
+body {
+    background-image: url("../Imagens/Cadastro Empresa/background_cadastro2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#basebox {
+    display: flex;
+}
+
+#infoempresa {
+    text-wrap: wrap;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+#cadastrobox {
+    background-color: white;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 4vh;
+}
+
+#linkcontinuar {
+    margin-bottom: 4vh;
+}
+
+#linhalogos {
+    display: flex;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+#logoifood {
+    width: 70%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 10%;
+}
+
+#logocashboard {
+    width: 70%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-right: 10%;
+}
+
+@media (max-height:800px) {
+    #basebox {
+        min-height: 1024px;
+    }
+  }
