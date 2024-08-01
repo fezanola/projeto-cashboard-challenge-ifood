@@ -1,0 +1,316 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --vermelho: #FF001B;
+    --branco: #fff;
+    --cinza: #EEEEEE;
+}
+
+body{
+    background-color: var(--cinza);
+}
+
+.corpo-site{
+    float: right;
+}
+
+/* titulo */
+.transacoes{
+    color: var(--vermelho);
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+}
+
+.transacoes h2{
+    font-size: 2.6rem;
+}
+
+/* botão - adicionar extrato */
+.file-input {
+    display: none;
+}
+
+.adicionar {
+    background-color: var(--vermelho);
+    width: 30rem;
+    border: none;
+    border-radius: 20px;
+    color: var(--branco);
+    transition: all 0.2s;
+    margin: 2rem auto;
+    padding: 0.5rem 4rem;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 4px #727171;
+}
+
+.pdf {
+    width: 20%;
+}
+
+.pdf .seta {
+    fill: var(--vermelho);
+    transition: all 0.2s;
+}
+
+.adicionar:hover .seta{
+    fill: var(--branco);
+}
+
+.pdf path {
+    fill: var(--branco);
+    transition: all 0.2s;
+}
+
+.adicionar:hover svg path {
+    fill: var(--vermelho);
+}
+
+.adicionar:hover {
+    background-color: var(--branco);
+    border: 1px solid var(--vermelho);
+    color: var(--vermelho);
+}
+
+/* fim botão - adicionar extrato */
+
+/* Botões de despesas e filtros */
+.botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.despesas, .filtros{
+    background-color: var(--vermelho);
+    width: 8rem;
+    border: none;
+    border-radius: 10px;
+    color: var(--branco);
+    transition: all 0.2s;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 4px #727171;
+    gap: 0.5rem;
+}
+
+.icone-despesa path, .icone-filtros path{
+    fill: var(--branco);
+}
+
+.icone-despesa, .icone-filtros{
+    width: 1.2rem;
+}
+/* Fim botões de despesas e filtros */
+
+/* tabela de extrato */
+.tabela{
+    display:flex;
+}
+
+.table {
+    table-layout: fixed;
+}
+
+.table th{
+    background-color: var(--cinza);
+}
+
+.colunas {
+    padding: 6%;
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #727171;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.entrada{
+    color: #51C13F;
+}
+
+.saida{
+    color: var(--vermelho);
+}
+
+.table tbody {
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #727171;
+    font-size: 1.1rem;
+}
+
+.body .entrada2{
+    color: #51C13F;
+}
+
+.body .saida2{
+    color: var(--vermelho);
+}
+
+.editar{
+    color: var(--vermelho);
+}
+
+.editar:hover {
+    color: var(--branco);
+    background-color: var(--vermelho);
+}
+
+/* tabela responsiva - cada linha se transforma em um card */
+@media (max-width: 768px) {
+    table.table {
+        word-wrap: break-word;
+    }
+
+    .table tbody{
+        box-shadow: 1px 1px 4px #727171;
+    }
+
+    table.table thead {
+        display: none;
+    }
+
+    table.table tr{
+        margin-bottom: 2rem;
+        border-radius: 20px;
+    }
+    
+    table.table td {
+        display: block;
+        background: var(--branco);
+        border: none;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        box-shadow: 1px 1px 4px #727171;
+    }
+
+    table.table tbody,
+    table.table tr {
+        display: block;
+    }
+
+    .table tbody tr {
+        overflow: hidden;
+        box-shadow: 1px 1px 4px var(--dourado);
+    }
+
+    table.table td:before {
+        content: attr(data-label); /* Texto baseado no data-label em cada td */
+        font-size: 0.8rem;
+        color: var(--bege);
+        border-radius: 10px;
+        width: 25%; 
+        float: left;
+        padding: 5px 5px;
+        background-color: var(--dourado);
+        font-weight: bold;
+        box-sizing: border-box;      
+    }
+}
+/* fim tabela responsiva */
+
+/* fim tabela de extrato */
+.ultimo-arquivo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.titulo-arquivo{
+    font-size: 2rem;
+}
+
+.conteudo-arquivo{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #727171;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.texto-arquivo{
+    display: flex;
+    padding-top: 0.5rem;
+    gap: 4rem;
+}
+
+.conteudo-arquivo h3{
+    font-size: 1.5rem;
+}
+
+.olho{
+    width: 2.5rem;
+}
+
+.olho path{
+    fill: var(--branco);
+}
+
+.olho-botao:hover .olho path {
+    fill: var(--vermelho);
+}
+
+.olho-botao:hover{
+    background-color: var(--branco);
+    transition: 0.5s all;
+}
+
+.historico-arquivos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.titulo-arquivos{
+    font-size: 2rem;
+}
+
+.conteudo-arquivos{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #727171;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.texto-arquivos{
+    display: flex;
+    padding-top: 0.5rem;
+    gap: 4rem;
+}
+
+.conteudo-arquivos h3{
+    font-size: 1.5rem;
+}
+
+.tudo{
+    display: flex;
+    flex-direction: column;
+}
+
+.olho-historico{
+    width: 2.5rem;
+}
+
+.olho-botao-historico:hover .olho-historico path {
+    fill: var(--vermelho);
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- link bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- link font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link css nav -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../CSS/transacoes.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transações</title>
+</head>
+
+<body>
+    <!-- começo header vertical -->
+
+    <header class="container-fluid">
+        <!-- lista dos itens -->
+        <ul class="nav flex-column header text-center">
+            <!-- logo -->
+            <li class="logo mt-3">
+                <img src="../Imagens/Nav/logo.png" class="img-fluid" width="80px">
+            </li>
+
+            <!-- itens do header -->
+            <li class="nav-item mt-3">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M3 12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1zm0 8a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1zm10 0a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1zm1-17a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z" />
+                    </svg>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="nav-item mt-3">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M6 13H2c-.6 0-1 .4-1 1v8c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-8c0-.6-.4-1-1-1m16-4h-4c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h4c.6 0 1-.4 1-1V10c0-.6-.4-1-1-1m-8-8h-4c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h4c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1" />
+                    </svg>
+                    Análises
+                </a>
+            </li>
+
+            <li class="nav-item mt-3">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g fill="none">
+                            <path
+                                d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                            <path fill="currentColor"
+                                d="M22 10v7a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-7zm-4 4h-3a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2m1-10a3 3 0 0 1 3 3v1H2V7a3 3 0 0 1 3-3z" />
+                        </g>
+                    </svg>
+                    Transações
+                </a>
+            </li>
+
+            <li class="nav-item mt-3">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                        <path fill="currentColor"
+                            d="M1024 1000v959l-64 32l-832-415V536l832-416l832 416v744h-128V680zm-64-736L719 384l621 314l245-122zm-64 1552v-816L256 680v816zM335 576l625 312l238-118l-622-314zm1073 1216v-128h640v128zm0-384h640v128h-640zm-256 640v-128h128v128zm0-512v-128h128v128zm0 256v-128h128v128zm-128 24h1zm384 232v-128h640v128z" />
+                    </svg>
+                    Cadastrar Produtos
+                </a>
+            </li>
+
+            <li class="nav-item mt-3">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M12 4a8 8 0 0 0-6.96 11.947A4.99 4.99 0 0 1 9 14h6a4.99 4.99 0 0 1 3.96 1.947A8 8 0 0 0 12 4m7.943 14.076A9.959 9.959 0 0 0 22 12c0-5.523-4.477-10-10-10S2 6.477 2 12a9.958 9.958 0 0 0 2.057 6.076l-.005.018l.355.413A9.98 9.98 0 0 0 12 22a9.947 9.947 0 0 0 5.675-1.765a10.055 10.055 0 0 0 1.918-1.728l.355-.413zM12 6a3 3 0 1 0 0 6a3 3 0 0 0 0-6"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Perfil
+                </a>
+            </li>
+
+            <li class="nav-item mt-3">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M17 10v1.126c.367.095.714.24 1.032.428l.796-.797l1.415 1.415l-.797.796c.188.318.333.665.428 1.032H21v2h-1.126c-.095.367-.24.714-.428 1.032l.797.796l-1.415 1.415l-.796-.797a4 4 0 0 1-1.032.428V20h-2v-1.126a4 4 0 0 1-1.032-.428l-.796.797l-1.415-1.415l.797-.796A4 4 0 0 1 12.126 16H11v-2h1.126c.095-.367.24-.714.428-1.032l-.797-.796l1.415-1.415l.796.797A4 4 0 0 1 15 11.126V10zm.406 3.578l.016.016c.354.358.574.85.578 1.392v.028a2 2 0 0 1-3.409 1.406l-.01-.012a2 2 0 0 1 2.826-2.83ZM5 8a4 4 0 1 1 7.938.703a7.03 7.03 0 0 0-3.235 3.235A4 4 0 0 1 5 8m4.29 5H7a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h6.101A6.98 6.98 0 0 1 9 15c0-.695.101-1.366.29-2"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Cadastrar Administrador
+                </a>
+            </li>
+            <!-- fim itens do header -->
+        </ul>
+        <!-- fim lista dos itens -->
+    </header>
+    <!-- fim header vertical-->
+
+    <!-- header horizontal - responsividade -->
+    <header class="container-fluid2">
+
+        <!-- esquerda - menu sanduíche -->
+        <div class="esquerda mx-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- começo offcanvas -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cashboard</h5>
+                    <button type="button" class="btn-close fechar" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="linha-horizontal"></div>
+
+                <!-- conteúdo offcanvas -->
+                <div class="offcanvas-body">
+
+                    <!-- lista dos itens offcanvas -->
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+
+                        <!-- itens offcanvas -->
+                        <li class="nav-item2">
+                            <a class="nav-link2" aria-current="page" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M3 12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1zm0 8a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1zm10 0a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1zm1-17a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z" />
+                                </svg>
+                                Dashboard</a>
+                        </li>
+
+                        <li class="nav-item2">
+                            <a class="nav-link2" href="#">
+                                <svg class="header-responsivo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M6 13H2c-.6 0-1 .4-1 1v8c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-8c0-.6-.4-1-1-1m16-4h-4c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h4c.6 0 1-.4 1-1V10c0-.6-.4-1-1-1m-8-8h-4c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h4c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1" />
+                                </svg>
+                                Análises</a>
+                        </li>
+
+                        <li class="nav-item2">
+                            <a class="nav-link2" href="#">
+                                <svg class="header-responsivo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                        <path
+                                            d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                        <path fill="currentColor"
+                                            d="M22 10v7a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-7zm-4 4h-3a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2m1-10a3 3 0 0 1 3 3v1H2V7a3 3 0 0 1 3-3z" />
+                                    </g>
+                                </svg>
+                                Transações</a>
+                        </li>
+
+                        <li class="nav-item2">
+                            <a class="nav-link2" href="#">
+                                <svg class="header-responsivo" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 2048 2048">
+                                    <path fill="currentColor"
+                                        d="M1024 1000v959l-64 32l-832-415V536l832-416l832 416v744h-128V680zm-64-736L719 384l621 314l245-122zm-64 1552v-816L256 680v816zM335 576l625 312l238-118l-622-314zm1073 1216v-128h640v128zm0-384h640v128h-640zm-256 640v-128h128v128zm0-512v-128h128v128zm0 256v-128h128v128zm-128 24h1zm384 232v-128h640v128z" />
+                                </svg>
+                                Cadastrar Produtos </a>
+                        </li>
+
+                        <li class="nav-item2">
+                            <a class="nav-link2" href="#">
+                                <svg class="header-responsivo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M12 4a8 8 0 0 0-6.96 11.947A4.99 4.99 0 0 1 9 14h6a4.99 4.99 0 0 1 3.96 1.947A8 8 0 0 0 12 4m7.943 14.076A9.959 9.959 0 0 0 22 12c0-5.523-4.477-10-10-10S2 6.477 2 12a9.958 9.958 0 0 0 2.057 6.076l-.005.018l.355.413A9.98 9.98 0 0 0 12 22a9.947 9.947 0 0 0 5.675-1.765a10.055 10.055 0 0 0 1.918-1.728l.355-.413zM12 6a3 3 0 1 0 0 6a3 3 0 0 0 0-6"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Perfil </a>
+                        </li>
+
+                        <li class="nav-item2">
+                            <a class="nav-link2" href="#">
+                                <svg class="header-responsivo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M17 10v1.126c.367.095.714.24 1.032.428l.796-.797l1.415 1.415l-.797.796c.188.318.333.665.428 1.032H21v2h-1.126c-.095.367-.24.714-.428 1.032l.797.796l-1.415 1.415l-.796-.797a4 4 0 0 1-1.032.428V20h-2v-1.126a4 4 0 0 1-1.032-.428l-.796.797l-1.415-1.415l.797-.796A4 4 0 0 1 12.126 16H11v-2h1.126c.095-.367.24-.714.428-1.032l-.797-.796l1.415-1.415l.796.797A4 4 0 0 1 15 11.126V10zm.406 3.578l.016.016c.354.358.574.85.578 1.392v.028a2 2 0 0 1-3.409 1.406l-.01-.012a2 2 0 0 1 2.826-2.83ZM5 8a4 4 0 1 1 7.938.703a7.03 7.03 0 0 0-3.235 3.235A4 4 0 0 1 5 8m4.29 5H7a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h6.101A6.98 6.98 0 0 1 9 15c0-.695.101-1.366.29-2"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Cadastrar Administrador </a>
+                        </li>
+                        <!-- fim itens offcanvas -->
+                    </ul>
+                    <!-- fim lista dos itens offcanvas -->
+                </div>
+            </div>
+        </div>
+        <!-- fim offcanvas -->
+
+        <!-- direita - logo Cashboard -->
+        <div class="direita">
+            <img src="../Imagens/Nav/miniatura.png" width="80%" class="img-fluid">
+        </div>
+    </header>
+    <!-- fim header horizontal - responsividade -->
+    <!-- começo do corpo do site -->
+    <div class="corpo-site">
+        <!-- titulo -->
+        <div class="transacoes pt-5">
+            <h2>Insira seu extrato bancário</h2>
+        </div>
+
+        <!-- botão - adicionar extrato -->
+        <form action="" method="post" enctype="multipart/form-data">
+            <label for="fileInput" class="adicionar">
+                <svg xmlns="http://www.w3.org/2000/svg" class="pdf" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd" viewBox="0 0 424 511.54">
+                    <path fill-rule="nonzero"
+                        d="M86.37 413.44c-11.76 0-11.76-17.89 0-17.89H189.1c-.2 2.95-.31 5.93-.31 8.94s.11 5.99.31 8.95H86.37zm35.31-167.09H104.5v19.96H78.08v-82.59h41.62c18.94 0 28.41 10.17 28.41 30.52 0 11.19-2.47 19.47-7.4 24.84-1.85 2.03-4.41 3.75-7.66 5.16-3.26 1.41-7.05 2.11-11.37 2.11zm-17.18-41.49v20.35h6.08c3.17 0 5.49-.33 6.94-.99 1.45-.66 2.18-2.18 2.18-4.56v-9.25c0-2.38-.73-3.9-2.18-4.56-1.45-.66-3.77-.99-6.94-.99h-6.08zm53.52 61.45v-82.59h37c14.89 0 25.11 3.17 30.66 9.51 5.55 6.34 8.32 16.94 8.32 31.78 0 14.85-2.77 25.44-8.32 31.78-5.55 6.34-15.77 9.52-30.66 9.52h-37zm37.4-61.45h-10.97v40.3h10.97c3.61 0 6.23-.41 7.86-1.25 1.63-.84 2.44-2.75 2.44-5.75v-26.3c0-2.99-.81-4.91-2.44-5.74-1.63-.84-4.25-1.26-7.86-1.26zm98.71 30.79h-22.47v30.66h-26.43v-82.59h54.18l-3.3 21.14h-24.45v11.1h22.47v19.69zM265.81 24.26v29.1c0 65.66 15.31 69.47 69.08 69.47h22.03l-91.11-98.57zm94.33 115.92h-21.48c-61.02 0-90.2-4.09-90.2-86.28V17.35H56.82c-21.7 0-39.47 17.78-39.47 39.47v264.79H219.2c-4.64 5.47-8.83 11.34-12.51 17.54H17.35v89.83c0 21.62 17.85 39.47 39.47 39.47h149.04c3.53 6.12 7.56 11.92 12.02 17.34H56.82C25.63 485.79 0 460.17 0 428.98V56.82C0 25.55 25.55 0 56.82 0h206.33a8.68 8.68 0 016.93 3.45l105.07 113.68c2.19 2.37 2.34 4.66 2.34 7.52v166.86c-5.55-2.98-11.35-5.56-17.35-7.71V140.18z" />
+                    <path
+                        d="M316.95 297.45c59.12 0 107.05 47.93 107.05 107.05 0 59.11-47.93 107.04-107.05 107.04S209.9 463.61 209.9 404.5c0-59.12 47.93-107.05 107.05-107.05z" />
+                    <path class="seta"
+                        d="M337.9 356.54l-3.77 47.75 17.35-6.07c11.47-4.4 23.27 3.72 14.38 13.82-10.82 12.45-27.26 29.55-39.22 40.94-7.43 7.42-11.73 7.49-19.18.06-13.24-13-26.24-27.44-39.18-40.87-9.25-10.06 2.3-18.55 14.28-13.95l17.16 6.01c-1.25-16.28-2.82-31.84-3.77-48.1 0-2.99 2.5-5.39 5.42-5.61 10.31 0 20.84-.24 31.12 0 2.92.22 5.42 2.62 5.42 5.61l-.01.41z" />
+                </svg>
+                Selecionar arquivos PDF
+            </label>
+            <input type="file" id="fileInput" name="fileInput" class="file-input" accept=".pdf">
+        </form>
+        <!-- fim botão - adicionar extrato -->
+
+        <!-- botões - despesas e filtros -->
+        <div class="botoes">
+            <button type="button" class="despesas ms-5" data-bs-toggle="modal" data-bs-target="#modalDespesas">
+                <?xml version="1.0" encoding="utf-8"?><svg class="icone-despesa" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 122.875 122.648" enable-background="new 0 0 122.875 122.648" xml:space="preserve">
+                    <g>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M108.993,47.079c7.683-0.059,13.898,6.12,13.882,13.805 c-0.018,7.683-6.26,13.959-13.942,14.019L75.24,75.138l-0.235,33.73c-0.063,7.619-6.338,13.789-14.014,13.78 c-7.678-0.01-13.848-6.197-13.785-13.818l0.233-33.497l-33.558,0.235C6.2,75.628-0.016,69.448,0,61.764 c0.018-7.683,6.261-13.959,13.943-14.018l33.692-0.236l0.236-33.73C47.935,6.161,54.209-0.009,61.885,0 c7.678,0.009,13.848,6.197,13.784,13.818l-0.233,33.497L108.993,47.079L108.993,47.079z" />
+                    </g>
+                </svg>
+                Despesas
+            </button>
+
+            <button type="button" class="filtros me-5" data-bs-toggle="modal" data-bs-target="#modalFiltros">Filtros
+                <?xml version="1.0" encoding="utf-8"?><svg class="icone-filtros" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 122.23 122.88" style="enable-background:new 0 0 122.23 122.88" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill-rule: evenodd;
+                            clip-rule: evenodd;
+                        }
+                    </style>
+                    <g>
+                        <path class="st0"
+                            d="M122.23,12.35v10.54c0,1.29-1.21,2.35-2.69,2.35H77.85c-2.84,5.92-8.89,10.01-15.9,10.01 c-7,0-13.05-4.09-15.89-10.01H2.69C1.22,25.24,0,24.18,0,22.89V12.35C0,11.06,1.21,10,2.69,10h43.37c2.84-5.92,8.89-10,15.89-10 c7,0,13.05,4.09,15.89,10h41.69C121.02,10,122.23,11.06,122.23,12.35L122.23,12.35L122.23,12.35z M49.57,112.88 c-2.84,5.92-8.89,10-15.9,10c-7,0-13.05-4.08-15.89-10l-15.09,0c-1.48,0-2.69-1.06-2.69-2.35V99.99c0-1.29,1.21-2.35,2.69-2.35 l15.09,0c2.84-5.92,8.89-10.01,15.89-10.01c7,0,13.05,4.09,15.89,10.01h69.97c1.48,0,2.69,1.06,2.69,2.35v10.54 c0,1.29-1.22,2.35-2.69,2.35L49.57,112.88L49.57,112.88z M104.12,69.73c-2.84,5.92-8.89,10.01-15.89,10.01 c-7,0-13.05-4.09-15.9-10.01H2.69C1.22,69.73,0,68.67,0,67.38V56.85c0-1.29,1.21-2.35,2.69-2.35h69.64c2.84-5.92,8.89-10,15.89-10 c7,0,13.05,4.09,15.89,10h15.42c1.48,0,2.69,1.06,2.69,2.35v10.53c0,1.29-1.21,2.35-2.69,2.35H104.12L104.12,69.73z" />
+                    </g>
+                </svg>
+            </button>
+        </div>
+        <!-- Fim botões - despesas e filtros -->
+
+        <!-- Modal despesas -->
+        <div class="modal fade" id="modalDespesas" tabindex="-1" aria-labelledby="modalDespesas" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalLabelDespesas">Carteira de despesas</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="linha-modal"></div>
+                    <!-- formulário modal -->
+                    <form>
+                        <div class="modal-body">
+
+                            <div class="form-floating mb-3">
+
+                                <input type="text" class="form-control" id="floatingInput" placeholder="R$00,00"
+                                    required>
+                                <label for="floatingInput">Valor</label>
+                            </div>
+                        </div>
+                        <div class="linha-modal"></div>
+                        <!-- botões modal -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn fechar" data-bs-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn salvar">Salvar gasto</button>
+                        </div>
+                    </form>
+                    <!-- fim formulário modal -->
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal despesas -->
+
+        <!-- Modal filtros -->
+        <div class="modal fade" id="modalFiltros" tabindex="-1" aria-labelledby="modalFiltros" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalLabelFiltros">Carteira de despesas</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="linha-modal"></div>
+                    <!-- formulário modal -->
+                    <form>
+                        <div class="modal-body">
+
+                            <div class="form-floating mb-3">
+
+                                <input type="text" class="form-control" id="floatingInput" placeholder="R$00,00"
+                                    required>
+                                <label for="floatingInput">Valor</label>
+                            </div>
+                        </div>
+                        <div class="linha-modal"></div>
+                        <!-- botões modal -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn fechar" data-bs-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn salvar">Salvar gasto</button>
+                        </div>
+                    </form>
+                    <!-- fim formulário modal -->
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal filtros -->
+
+        <!-- tabela de extrato-->
+        <div class="container tabela">
+            <table class="table">
+                <!-- colunas -->
+                <thead class="text-center">
+                    <tr>
+                        <th>
+                            <div class="colunas me-3">
+                                Data
+                            </div>
+                        </th>
+                        <th>
+                            <div class="colunas mx-3">
+                                Histórico
+                            </div>
+                        </th>
+                        <th>
+                            <div class="colunas entrada mx-3">
+                                Entrada
+                            </div>
+                        </th>
+                        <th>
+                            <div class="colunas saida ms-3">
+                                Saída
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <!-- fim colunas -->
+
+                <!-- conteúdo de exemplo -->
+                <tbody class="text-center body">
+                    <tr>
+                        <td data-label="Data">dd/mm/aaaa</td>
+                        <td data-label="Histórico">Transferência PIX</td>
+                        <td data-label="Entrada" class="entrada2">30,00</td>
+                        <td data-label="Saída" class="saida2">.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Data">dd/mm/aaaa</td>
+                        <td data-label="Histórico">Transferência PIX</td>
+                        <td data-label="Entrada" class="entrada2">.</td>
+                        <td data-label="Saída" class="saida2">
+                            -20,00
+                            <button type="button" class="btn editar">
+                                <i class="bi bi-pencil-square"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Data">dd/mm/aaaa</td>
+                        <td data-label="Histórico">Transferência PIX</td>
+                        <td data-label="Entrada" class="entrada2">.</td>
+                        <td data-label="Saída" class="saida2">
+                            -20,00
+                            <button type="button" class="btn editar">
+                                <i class="bi bi-pencil-square"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Data">dd/mm/aaaa</td>
+                        <td data-label="Histórico">Transferência PIX</td>
+                        <td data-label="Entrada" class="entrada2">.</td>
+                        <td data-label="Saída" class="saida2">
+                            -20,00
+                            <button type="button" class="btn editar">
+                                <i class="bi bi-pencil-square"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Data">dd/mm/aaaa</td>
+                        <td data-label="Histórico">Transferência PIX</td>
+                        <td data-label="Entrada" class="entrada2">.</td>
+                        <td data-label="Saída" class="saida2">
+                            -20,00
+                            <button type="button" class="btn editar">
+                                <i class="bi bi-pencil-square"></i>
+                        </td>
+                    </tr>
+                </tbody>
+                <!-- fim conteúdo de exemplo -->
+            </table>
+        </div>
+        <!-- fim tabela de extrato -->
+        <div class="container tudo">
+            <div class="container ultimo-arquivo">
+                <h2 class="titulo-arquivo">Arquivo enviado:</h2>
+                <div class="container conteudo-arquivo">
+                    <div class="texto-arquivo ms-3">
+                        <h3>Extrato_Bancário01.PDF</h3>
+                        <h3>-</h3>
+                        <h3>22/05/2024 às 18h18</h3>
+                    </div>
+                    <button type="button" class="btn olho-botao me-3">
+                        <?xml version="1.0" encoding="utf-8"?><svg class="olho" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 122.88 83.78" style="enable-background:new 0 0 122.88 83.78"
+                            xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M95.73,10.81c10.53,7.09,19.6,17.37,26.48,29.86l0.67,1.22l-0.67,1.21c-6.88,12.49-15.96,22.77-26.48,29.86 C85.46,79.88,73.8,83.78,61.44,83.78c-12.36,0-24.02-3.9-34.28-10.81C16.62,65.87,7.55,55.59,0.67,43.1L0,41.89l0.67-1.22 c6.88-12.49,15.95-22.77,26.48-29.86C37.42,3.9,49.08,0,61.44,0C73.8,0,85.45,3.9,95.73,10.81L95.73,10.81z M60.79,22.17l4.08,0.39 c-1.45,2.18-2.31,4.82-2.31,7.67c0,7.48,5.86,13.54,13.1,13.54c2.32,0,4.5-0.62,6.39-1.72c0.03,0.47,0.05,0.94,0.05,1.42 c0,11.77-9.54,21.31-21.31,21.31c-11.77,0-21.31-9.54-21.31-21.31C39.48,31.71,49.02,22.17,60.79,22.17L60.79,22.17L60.79,22.17z M109,41.89c-5.5-9.66-12.61-17.6-20.79-23.11c-8.05-5.42-17.15-8.48-26.77-8.48c-9.61,0-18.71,3.06-26.76,8.48 c-8.18,5.51-15.29,13.45-20.8,23.11c5.5,9.66,12.62,17.6,20.8,23.1c8.05,5.42,17.15,8.48,26.76,8.48c9.62,0,18.71-3.06,26.77-8.48 C96.39,59.49,103.5,51.55,109,41.89L109,41.89z" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container historico-arquivos">
+                <h2 class="titulo-arquivos">Histórico de arquivos:</h2>
+                <div class="conteudo-arquivos">
+                    <div class="texto-arquivos ms-3">
+                        <h3>Extrato_Bancário01.PDF</h3>
+                        <h3>-</h3>
+                        <h3>22/05/2024 às 18h18</h3>
+                    </div>
+                    <button type="button" class="btn olho-botao-historico me-3">
+                        <?xml version="1.0" encoding="utf-8"?><svg class="olho-historico" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 122.88 83.78" style="enable-background:new 0 0 122.88 83.78"
+                            xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M95.73,10.81c10.53,7.09,19.6,17.37,26.48,29.86l0.67,1.22l-0.67,1.21c-6.88,12.49-15.96,22.77-26.48,29.86 C85.46,79.88,73.8,83.78,61.44,83.78c-12.36,0-24.02-3.9-34.28-10.81C16.62,65.87,7.55,55.59,0.67,43.1L0,41.89l0.67-1.22 c6.88-12.49,15.95-22.77,26.48-29.86C37.42,3.9,49.08,0,61.44,0C73.8,0,85.45,3.9,95.73,10.81L95.73,10.81z M60.79,22.17l4.08,0.39 c-1.45,2.18-2.31,4.82-2.31,7.67c0,7.48,5.86,13.54,13.1,13.54c2.32,0,4.5-0.62,6.39-1.72c0.03,0.47,0.05,0.94,0.05,1.42 c0,11.77-9.54,21.31-21.31,21.31c-11.77,0-21.31-9.54-21.31-21.31C39.48,31.71,49.02,22.17,60.79,22.17L60.79,22.17L60.79,22.17z M109,41.89c-5.5-9.66-12.61-17.6-20.79-23.11c-8.05-5.42-17.15-8.48-26.77-8.48c-9.61,0-18.71,3.06-26.76,8.48 c-8.18,5.51-15.29,13.45-20.8,23.11c5.5,9.66,12.62,17.6,20.8,23.1c8.05,5.42,17.15,8.48,26.76,8.48c9.62,0,18.71-3.06,26.77-8.48 C96.39,59.49,103.5,51.55,109,41.89L109,41.89z" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- link bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

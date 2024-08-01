@@ -11,15 +11,15 @@
 }
 
 /* header vertical */
-.container-fluid{
+header.container-fluid{
     background-color: var(--vermelho);
-    width: 10%;
-    position: fixed;
+    width: 8rem;
     margin: 10px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 /* itens do header */
@@ -53,7 +53,7 @@ svg {
     width: 30%;
 }
 
-.nav-item svg path {
+.nav-item path {
     fill: #000000;
     transition: all 0.2s;
 }
@@ -64,7 +64,7 @@ svg {
 /* fim header vertical */
 
 /* começo header horizontal - responsivo */
-.container-fluid2{
+header.container-fluid2{
     display: none;
     background-color: var(--branco);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -122,7 +122,7 @@ svg {
 }
 
 /* icones do offcanvas */
-svg path{
+.header-responsivo path{
     color: var(--vermelho);
 }
 
@@ -145,11 +145,11 @@ svg path{
 
 /* responsividade - some o header vertical e aparece o horizontal */
 @media(max-width:845px){
-    .container-fluid2{
+    header.container-fluid2{
         display: flex;
     }
 
-    .container-fluid{
+    header.container-fluid{
         display: none;
     }
 }
