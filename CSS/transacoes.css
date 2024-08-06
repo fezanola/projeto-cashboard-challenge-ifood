@@ -15,9 +15,18 @@ body{
     background-color: var(--cinza);
 }
 
+/* corpo do site flutuando na direita do header horizontal */
 .corpo-site{
     float: right;
 }
+
+@media(max-width: 845px){
+    .corpo-site{
+        float:none;
+    }
+}
+
+/* conteúdo do corpo do site */
 
 /* titulo */
 .transacoes{
@@ -80,6 +89,12 @@ body{
     color: var(--vermelho);
 }
 
+@media(max-width: 480px){
+    .adicionar {
+        width: 100%;
+    }
+    
+}
 /* fim botão - adicionar extrato */
 
 /* Botões de despesas e filtros */
@@ -173,13 +188,13 @@ body{
         word-wrap: break-word;
     }
 
-    .table tbody{
-        box-shadow: 1px 1px 4px #727171;
-    }
-
     table.table thead {
         display: none;
     }
+
+    table.table tbody {
+        box-shadow: none;
+    } 
 
     table.table tr{
         margin-bottom: 2rem;
@@ -203,18 +218,16 @@ body{
 
     .table tbody tr {
         overflow: hidden;
-        box-shadow: 1px 1px 4px var(--dourado);
+        box-shadow: 1px 1px 4px #727171;
     }
 
     table.table td:before {
         content: attr(data-label); /* Texto baseado no data-label em cada td */
         font-size: 0.8rem;
-        color: var(--bege);
         border-radius: 10px;
         width: 25%; 
         float: left;
         padding: 5px 5px;
-        background-color: var(--dourado);
         font-weight: bold;
         box-sizing: border-box;      
     }
@@ -222,6 +235,8 @@ body{
 /* fim tabela responsiva */
 
 /* fim tabela de extrato */
+
+/* card do último arquivo enviado */
 .ultimo-arquivo{
     display: flex;
     flex-direction: column;
@@ -254,6 +269,10 @@ body{
     font-size: 1.5rem;
 }
 
+.ultimo-arquivo button, .historico-arquivos button{
+    margin-right: 1rem;
+}
+
 .olho{
     width: 2.5rem;
 }
@@ -270,7 +289,9 @@ body{
     background-color: var(--branco);
     transition: 0.5s all;
 }
+/* fim card do último arquivo enviado */
 
+/* cards do histórico de arquivos enviados */
 .historico-arquivos{
     display: flex;
     flex-direction: column;
@@ -302,11 +323,6 @@ body{
     font-size: 1.5rem;
 }
 
-.tudo{
-    display: flex;
-    flex-direction: column;
-}
-
 .olho-historico{
     width: 2.5rem;
 }
@@ -314,3 +330,66 @@ body{
 .olho-botao-historico:hover .olho-historico path {
     fill: var(--vermelho);
 }
+/* fim cards do histórico de arquivos enviados */
+
+/* todos cards responsivos */
+@media(max-width: 767px){
+    .ultimo-arquivo{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+    
+    .conteudo-arquivo{
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 5px;
+        padding: 0;
+        
+    }
+    
+    .texto-arquivo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .traco{
+        display: none;
+    }
+
+    .olho, .olho-historico{
+        width: 4rem;
+    }
+
+    .ultimo-arquivo button, .historico-arquivos button{
+        margin-right: 0;
+    }
+
+    .historico-arquivos{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+    
+    .conteudo-arquivos{
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 5px;
+        padding: 0;
+    }
+    
+    .texto-arquivos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+}
+/* fim cards responsivos */
